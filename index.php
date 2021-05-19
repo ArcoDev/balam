@@ -46,6 +46,12 @@
     </div>
     <!-- SOCIALES -->
     <div class="sociales wow animate__animated animate__pulse animate__delay-1s animate__repeat-5">
+        <a href="tel:8715755656">
+            <i class="fas fa-phone-square-alt"></i>
+        </a>
+        <a href="mailto:info@balam.com">
+            <i class="fas fa-envelope"></i>
+        </a>
         <a href="https://www.facebook.com/BicicletasBALAM/" target="_blank">
             <i class="fab fa-facebook-f"></i>
         </a>
@@ -137,7 +143,7 @@
                 ?>
             </div>
             <div id="caja-accesorios" class="accesorios">
-                 <?php  
+                <?php  
                     /* <?php 
                                                 $url_vacia = "";
                                                 if($infoImg["url_amazon"] != "") {
@@ -145,32 +151,32 @@
                                                 } */
                     $consulta = $con->query("SELECT * FROM productos WHERE nombre_cat = 'accesorios' ");
                     while ($infoImg = mysqli_fetch_array($consulta)) { ?>
-                    <div class="img">
-                        <img class="img-prod" lazy="loading" src="assets/images/<?= $infoImg["url_foto"]?>"
-                            alt="Galeria de balam">
-                        <div class="caja-hover">
-                            <h3><?= $infoImg["nombre"]?></h3>
-                            <p><?= $infoImg["precio"]?></p>
-                            <div class="caja-compra">
-                                <p>Compralo por:</p>
-                                <div class="botones">
-                                    <a class="mercado" target="_blank" href="<?= $infoImg["url_mercado_libre"]?>"></a>
-                                    <a class="amazon" target="_blank" href="<?= $infoImg["url_amazon"]?>"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="info-movil">
-                            <h3><?= $infoImg["nombre"]?></h3>
-                            <p><?= $infoImg["precio"]?></p>
-                            <div class="caja-compra">
-                                <p>Compralo por:</p>
-                                <div class="botones">
-                                    <a class="mercado" target="_blank" href="<?= $infoImg["url_mercado_libre"]?>"></a>
-                                    <a class="amazon" target="_blank" href="<?= $infoImg["url_amazon"]?>"></a>
-                                </div>
+                <div class="img">
+                    <img class="img-prod" lazy="loading" src="assets/images/<?= $infoImg["url_foto"]?>"
+                        alt="Galeria de balam">
+                    <div class="caja-hover">
+                        <h3><?= $infoImg["nombre"]?></h3>
+                        <p><?= $infoImg["precio"]?></p>
+                        <div class="caja-compra">
+                            <p>Compralo por:</p>
+                            <div class="botones">
+                                <a class="mercado" target="_blank" href="<?= $infoImg["url_mercado_libre"]?>"></a>
+                                <a class="amazon" target="_blank" href="<?= $infoImg["url_amazon"]?>"></a>
                             </div>
                         </div>
                     </div>
+                    <div class="info-movil">
+                        <h3><?= $infoImg["nombre"]?></h3>
+                        <p><?= $infoImg["precio"]?></p>
+                        <div class="caja-compra">
+                            <p>Compralo por:</p>
+                            <div class="botones">
+                                <a class="mercado" target="_blank" href="<?= $infoImg["url_mercado_libre"]?>"></a>
+                                <a class="amazon" target="_blank" href="<?= $infoImg["url_amazon"]?>"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <?php 
                     }
                 ?>

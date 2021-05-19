@@ -31,6 +31,12 @@ body {
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .menu {
+    left: 3%;
+  }
+}
+
 .menu h2 {
   font-size: 20px;
   color: #fff;
@@ -49,8 +55,8 @@ body {
 
 @media screen and (max-width: 767px) {
   .menu {
-    left: 1%;
-    top: 1%;
+    left: 3%;
+    top: 3%;
   }
 }
 
@@ -60,7 +66,7 @@ body {
   height: 100vh;
   z-index: 8;
   display: flex;
-  transform: translate3d(0px, -120%, 0px);
+  transform: translate3d(0px, -150%, 0px);
   transition: all 1s ease-out;
 }
 
@@ -80,6 +86,23 @@ body {
   cursor: pointer;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .menu-click .items .link a {
+    font-size: 5rem;
+    line-height: 10rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu-click .items .link a {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
 .menu-click .items .link a li {
   color: #d3d2d2;
   transition: .4s;
@@ -96,6 +119,7 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  object-fit: cover;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.377);
   box-shadow: none;
   background-image: url("../assets/img/logo.png");
@@ -105,6 +129,12 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+  .logo {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .logo {
     display: none;
   }
@@ -124,6 +154,11 @@ body {
   right: 5%;
   top: 3%;
   z-index: 11;
+}
+
+.sociales a {
+  text-decoration: none;
+  color: transparent;
 }
 
 .sociales i {
@@ -177,10 +212,17 @@ body {
   width: 30%;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .txt-header {
+    width: 40%;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .txt-header {
     width: 85%;
-    left: 3%;
+    left: 5%;
+    top: 15%;
   }
 }
 
@@ -193,7 +235,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .txt-header h2 {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 
@@ -269,6 +311,12 @@ body {
   padding: 80px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .caja-nosotros .txt-producto {
+    padding: 80px 30px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .caja-nosotros .txt-producto {
     padding: 30px;
@@ -285,6 +333,7 @@ body {
   color: #f0e6e6;
   font-size: 20px;
   margin: 15px 0;
+  text-align: justify;
 }
 
 .caja-nosotros .txt-producto a {
@@ -305,6 +354,7 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  object-fit: cover;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.377);
   background-image: url("../assets/img/bicis.png");
 }
@@ -313,6 +363,7 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  object-fit: cover;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.377);
   background-image: url("../assets/img/destacados.png");
 }
@@ -334,6 +385,12 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .galeria {
+    padding: 80px 30px;
+  }
+}
+
 .titulo {
   margin: 0 auto;
 }
@@ -348,6 +405,12 @@ body {
 @media screen and (max-width: 767px) {
   .titulo h2 {
     font-size: 25px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .titulo h2 {
     margin-bottom: 40px;
   }
 }
@@ -379,10 +442,10 @@ select {
 }
 
 .gal-img .img {
-  width: 32.5%;
+  width: 32%;
   height: 300px;
-  margin: 5px;
-  background: #555353;
+  margin: 3px;
+  background: white;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
   transition: all .8s ease-in-out;
 }
@@ -399,18 +462,31 @@ select {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .gal-img .img {
+    width: 49%;
+    margin-bottom: 12.5rem;
+  }
+}
+
 .gal-img .img .caja-hover {
   position: absolute;
-  width: 30.1%;
-  height: 300px;
-  background: #0e0d0db3;
+  width: 28.5%;
+  height: 304px;
+  background: #0e0d0dd9;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   opacity: 0;
   transition: all .4s ease-in-out;
-  margin-top: -304px;
+  margin-top: -305px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .gal-img .img .caja-hover {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -454,6 +530,7 @@ select {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  object-fit: cover;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.377);
   background-image: url("../assets/img/mercado-libre.png");
 }
@@ -511,6 +588,57 @@ select {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    object-fit: cover;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.377);
+    background-image: url("../assets/img/mercado-libre.png");
+  }
+  .gal-img .img .info-movil .caja-compra .botones .amazon {
+    background-image: url("../assets/img/amazon.jpg");
+    margin-left: 10px;
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .gal-img .img .info-movil {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .gal-img .img .info-movil h3 {
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
+  .gal-img .img .info-movil p {
+    color: #f0e6e6;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  .gal-img .img .info-movil .caja-compra {
+    width: 95%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .gal-img .img .info-movil .caja-compra .botones {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .gal-img .img .info-movil .caja-compra .botones .mercado,
+  .gal-img .img .info-movil .caja-compra .botones .amazon {
+    padding: 25px 100px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.377);
     background-image: url("../assets/img/mercado-libre.png");
   }
@@ -524,10 +652,11 @@ select {
 /* CONTACTO */
 .contacto {
   width: 100vw;
-  height: 75vh;
+  height: 650px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  object-fit: cover;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.377);
   background-image: url("../assets/img/footer.png");
 }
@@ -535,7 +664,7 @@ select {
 @media screen and (max-width: 767px) {
   .contacto {
     background: none;
-    height: 65vh;
+    height: 454px;
   }
 }
 
@@ -557,8 +686,16 @@ select {
   .contacto .form {
     width: 100%;
     margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .contacto .form {
+    width: 100%;
+    margin-left: 0;
     margin-top: 0;
     border-radius: 0;
+    height: 75vh;
   }
 }
 
@@ -721,12 +858,6 @@ select {
   align-items: center;
   justify-content: center;
   box-shadow: 0 -4px -6px 0 rgba(0, 0, 0, 0.897), 0 6px 10px 0 rgba(0, 0, 0, 0.74);
-}
-
-@media screen and (max-width: 767px) {
-  .footer {
-    margin-top: 20px;
-  }
 }
 
 .footer h2 {
