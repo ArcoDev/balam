@@ -18,7 +18,7 @@ addEventListener("DOMContentLoaded", () => {
         });
     }
     /* Validar formulario */
-    $('#enviar').click(function() {
+    $('#enviar').click(function () {
         var nombre, correo, mensaje, expresionEmail, exito, error, mensajeAlerta, enviar;
         nombre = document.getElementById('nombre').value;
         correo = document.getElementById('correo').value;
@@ -32,42 +32,48 @@ addEventListener("DOMContentLoaded", () => {
 
         if (nombre === '' || correo === '' || mensaje === '') {
             error.style.opacity = "1";
+            error.style.transform = "none";
             mensajeAlerta.innerHTML = "Todos los campos son obligatorios.";
-            setTimeout(function() {
-                error.style.opacity = "0";
+            setTimeout(function () {
+                error.style.transform = "translate(120%)";
             }, 5000);
             return false;
         } else if (nombre.length > 20) {
             error.style.opacity = "1";
+            error.style.transform = "none";
             mensajeAlerta.innerHTML = "EL nombre es demasiado largo.";
-            setTimeout(function() {
-                error.style.opacity = "0";
+            setTimeout(function () {
+                error.style.transform = "translate(120%)";
             }, 5000);
             return false;
         } else if (!expresionEmail.test(correo)) {
             error.style.opacity = "1";
+            error.style.transform = "none";
             mensajeAlerta.innerHTML = "El formato del correo, no es valido.";
-            setTimeout(function() {
-                error.style.opacity = "0";
+            setTimeout(function () {
+              error.style.transform = "translate(120%)";
+
             }, 5000);
             return false;
         } else if (mensaje.length > 60) {
             error.style.opacity = "1";
+            error.style.transform = "none";
             mensajeAlerta.innerHTML = "El mensaje es demasiado largo.";
-            setTimeout(function() {
-                error.style.opacity = "0";
+            setTimeout(function () {
+                error.style.transform = "translate(120%)";
             }, 5000);
             return false;
         } else {
             $.ajax({
-                url: '../../web_balam/correo.php',
+                url: '../correo.php',
                 type: 'POST',
                 data: $('#enviar-correo').serialize(),
-                success: function() {
+                success: function () {
                     exito.style.opacity = "1";
+                    exito.style.transform = "none";
                     enviar.reset();
-                    setTimeout(function() {
-                        exito.style.opacity = "0";
+                    setTimeout(function () {
+                        exito.style.transform = "translate(120%)";
                     }, 4000);
                 }
             });

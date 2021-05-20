@@ -1,5 +1,5 @@
 <?php
-$destinatario = "cacosta@awsoftware.mx";
+$destinatario = "info@balam.com, cacosta@awsoftware.mx";
 $nombre = $_POST['nombre'];
 $correo = $_POST['correo'];
 $mensaje = $_POST['mensaje'];

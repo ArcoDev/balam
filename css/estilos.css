@@ -712,6 +712,12 @@ select {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .contacto {
+    height: 55vh;
+  }
+}
+
 .contacto .form {
   width: 50%;
   height: auto;
@@ -739,7 +745,7 @@ select {
     margin-left: 0;
     margin-top: 0;
     border-radius: 0;
-    height: 75vh;
+    height: 55vh;
   }
 }
 
@@ -825,6 +831,13 @@ select {
   border-radius: 10px;
   transition: all 1s ease-out;
   opacity: 0;
+  transform: translate(120%);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .error {
+    width: 50%;
+  }
 }
 
 .error p {
@@ -852,7 +865,14 @@ select {
   border-radius: 10px;
   transition: all 1s ease-out;
   opacity: 0;
+  transform: translate(120%);
   background-color: #a2ddb0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .exito {
+    width: 50%;
+  }
 }
 
 .exito p {
