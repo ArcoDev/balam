@@ -733,6 +733,7 @@ select {
 /* CONTACTO */
 
 .contacto {
+    position: relative;
     width: 100%;
     height: 100vh;
     margin-top: 5rem;
@@ -754,12 +755,12 @@ select {
     }
 
     .form {
+        position: absolute;
         width: 50%;
         height: auto;
         background: #252525;
-        position: absolute;
-        margin-top: 50px;
-        margin-left: 50px;
+        bottom: 10%;
+        left: 5%;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -780,6 +781,11 @@ select {
                 margin-top: 0;
                 border-radius: 0;
                 height: 55vh;
+            }
+        }
+        @media screen and(max-width: $monitor) {
+            & {
+                margin-top: 130px
             }
         }
 
