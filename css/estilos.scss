@@ -862,12 +862,13 @@ select {
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 3%;
+    top: 1%;
     right: 1%;
     border-radius: 10px;
     transition: all 1s ease-out;
     opacity: 0;
     transform: translate(120%);
+    z-index: 150;
     @media screen and(max-width: $movil) {
         & {
             width: 90%;

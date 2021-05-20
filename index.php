@@ -142,45 +142,7 @@
                     }
                 ?>
             </div>
-            <div id="caja-accesorios" class="accesorios">
-                <?php  
-                    /* <?php 
-                                                $url_vacia = "";
-                                                if($infoImg["url_amazon"] != "") {
-                                                    $url_vacia = $infoImg["url_amazon"];
-                                                } */
-                    $consulta = $con->query("SELECT * FROM productos WHERE nombre_cat = 'accesorios' ");
-                    while ($infoImg = mysqli_fetch_array($consulta)) { ?>
-                <div class="img">
-                    <img class="img-prod" lazy="loading" src="assets/images/<?= $infoImg["url_foto"]?>"
-                        alt="Galeria de balam">
-                    <div class="caja-hover">
-                        <h3><?= $infoImg["nombre"]?></h3>
-                        <p><?= $infoImg["precio"]?></p>
-                        <div class="caja-compra">
-                            <p>Compralo por:</p>
-                            <div class="botones">
-                                <a class="mercado" target="_blank" href="<?= $infoImg["url_mercado_libre"]?>"></a>
-                                <a class="amazon" target="_blank" href="<?= $infoImg["url_amazon"]?>"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info-movil">
-                        <h3><?= $infoImg["nombre"]?></h3>
-                        <p><?= $infoImg["precio"]?></p>
-                        <div class="caja-compra">
-                            <p>Compralo por:</p>
-                            <div class="botones">
-                                <a class="mercado" target="_blank" href="<?= $infoImg["url_mercado_libre"]?>"></a>
-                                <a class="amazon" target="_blank" href="<?= $infoImg["url_amazon"]?>"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <?php 
-                    }
-                ?>
-            </div>
+            
         </div>
     </section>
     <div id="contacto" class="ubicacion ">
