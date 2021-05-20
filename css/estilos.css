@@ -177,6 +177,23 @@ body::-webkit-scrollbar-thumb {
   margin-right: 10px;
 }
 
+.sociales i span {
+  font-size: 16px;
+  margin-top: -5px;
+}
+
+@media screen and (max-width: 767px) {
+  .sociales i span {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .sociales i span {
+    display: none;
+  }
+}
+
 .whatsap {
   position: fixed;
   right: 3%;
@@ -696,7 +713,8 @@ select {
 /* CONTACTO */
 .contacto {
   width: 100%;
-  height: 74vh;
+  height: 100vh;
+  margin-top: 5rem;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -709,6 +727,7 @@ select {
   .contacto {
     background: none;
     height: 454px;
+    margin-top: -25px;
   }
 }
 
@@ -723,8 +742,8 @@ select {
   height: auto;
   background: #252525;
   position: absolute;
-  margin-top: -70px;
-  margin-left: 85px;
+  margin-top: 50px;
+  margin-left: 50px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -834,6 +853,14 @@ select {
   transform: translate(120%);
 }
 
+@media screen and (max-width: 767px) {
+  .error {
+    width: 90%;
+    top: 10%;
+    text-align: center;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .error {
     width: 50%;
@@ -849,6 +876,13 @@ select {
 .error i {
   color: #a94442;
   margin-right: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .error i {
+    margin-left: 40px;
+    margin-right: 0;
+  }
 }
 
 .exito {
@@ -869,6 +903,14 @@ select {
   background-color: #a2ddb0;
 }
 
+@media screen and (max-width: 767px) {
+  .exito {
+    width: 90%;
+    top: 10%;
+    text-align: center;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .exito {
     width: 50%;
@@ -884,6 +926,13 @@ select {
 .exito i {
   color: #a94442;
   margin-right: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .exito i {
+    margin-left: 40px;
+    margin-right: 0;
+  }
 }
 
 .exito p {
@@ -908,10 +957,9 @@ select {
   text-transform: uppercase;
 }
 
-.ubicacion iframe {
-  width: 100vw;
-  height: 400px;
-  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+.ubicacion img {
+  width: 100%;
+  object-fit: cover;
 }
 
 /* FOOTER */

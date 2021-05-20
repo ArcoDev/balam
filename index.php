@@ -47,10 +47,10 @@
     <!-- SOCIALES -->
     <div class="sociales wow animate__animated animate__pulse animate__delay-1s animate__repeat-5">
         <a href="tel:{8715755656}">
-            <i class="fas fa-phone-square-alt"></i>
+            <i class="fas fa-phone-square-alt"><span> (871) 575-56-56</span></i>
         </a>
         <a href="mailto:info@balam.com">
-            <i class="fas fa-envelope"></i>
+            <i class="fas fa-envelope"><span> info@bicicletasbalam.com</span></i>
         </a>
         <a href="https://www.facebook.com/BicicletasBALAM/" target="_blank">
             <i class="fab fa-facebook-f"></i>
@@ -185,9 +185,7 @@
     </section>
     <div id="contacto" class="ubicacion ">
         <p>Ubicación</p>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3599.4078019924546!2d-103.39310208498324!3d25.558095983729633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x868fdb1c7d4c9d61%3A0x6c0c3a8afffd4c64!2sCalz.%20Juan%20Agust%C3%ADn%20Espinoza%20900%2C%20Residencial%20las%20Etnias%2C%20Torre%C3%B3n%2C%20Coah.!5e0!3m2!1ses-419!2smx!4v1621380284880!5m2!1ses-419!2smx"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <img src="assets/img/direccion.png" alt="Direccion Balam">
     </div>
     <!-- Contacto-->
     <section class="contacto">
