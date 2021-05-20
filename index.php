@@ -46,7 +46,7 @@
     </div>
     <!-- SOCIALES -->
     <div class="sociales wow animate__animated animate__pulse animate__delay-1s animate__repeat-5">
-        <a href="tel:8715755656">
+        <a href="tel:{8715755656}">
             <i class="fas fa-phone-square-alt"></i>
         </a>
         <a href="mailto:info@balam.com">

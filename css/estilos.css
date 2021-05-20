@@ -15,6 +15,16 @@ body {
   background: #2e2d2d;
 }
 
+body::-webkit-scrollbar {
+  width: 10px;
+  background: #353434;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #000;
+}
+
 /* Resposive */
 /* ELEMENTOS FLOTANTES */
 .menu {
@@ -313,13 +323,14 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .caja-nosotros .txt-producto {
-    padding: 80px 30px;
+    padding: 80px 20px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .caja-nosotros .txt-producto {
-    padding: 30px;
+    padding: 20px;
+    align-items: center;
   }
 }
 
@@ -329,11 +340,36 @@ body {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 767px) {
+  .caja-nosotros .txt-producto h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .caja-nosotros .txt-producto h3 {
+    font-size: 20px;
+  }
+}
+
 .caja-nosotros .txt-producto p {
   color: #f0e6e6;
   font-size: 20px;
   margin: 15px 0;
   text-align: justify;
+}
+
+@media screen and (max-width: 767px) {
+  .caja-nosotros .txt-producto p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .caja-nosotros .txt-producto p {
+    font-size: 18px;
+  }
 }
 
 .caja-nosotros .txt-producto a {
@@ -348,6 +384,12 @@ body {
 .caja-nosotros .txt-producto a:hover {
   background: red;
   transform: scale(1.04);
+}
+
+@media screen and (max-width: 767px) {
+  .caja-nosotros .txt-producto a {
+    margin-top: 2rem;
+  }
 }
 
 .caja-nosotros .caja-bicis {
@@ -442,10 +484,12 @@ select {
 }
 
 .gal-img .img {
+  position: relative;
   width: 32%;
   height: 300px;
   margin: 3px;
-  background: white;
+  background: #535757;
+  background: linear-gradient(0deg, #535757 0%, black 100%);
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
   transition: all .8s ease-in-out;
 }
@@ -471,7 +515,7 @@ select {
 
 .gal-img .img .caja-hover {
   position: absolute;
-  width: 28.5%;
+  width: 100%;
   height: 304px;
   background: #0e0d0dd9;
   display: flex;
@@ -651,8 +695,8 @@ select {
 
 /* CONTACTO */
 .contacto {
-  width: 100vw;
-  height: 650px;
+  width: 100%;
+  height: 74vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

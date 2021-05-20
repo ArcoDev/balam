@@ -18,6 +18,17 @@ body {
     background: #2e2d2d;
 }
 
+body::-webkit-scrollbar {
+    width: 10px;
+    background: #353434;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #000;
+
+}
+
 @mixin fondoProductos {
     background-position: center;
     background-size: cover;
@@ -47,11 +58,13 @@ $tabletH: 1024px;
     cursor: pointer;
     z-index: 10;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
-    @media screen and(min-width: $tabletV) and (max-width: $tabletH){
+
+    @media screen and(min-width: $tabletV) and (max-width: $tabletH) {
         & {
             left: 3%;
         }
     }
+
     h2 {
         font-size: 20px;
         color: #fff;
@@ -84,13 +97,14 @@ $tabletH: 1024px;
     display: flex;
     transform: translate3d(0px, -150%, 0px);
     transition: all 1s ease-out;
-    
+
 
     .items {
         width: 100%;
         height: 100vh;
         background: #252525;
         padding: 120px;
+
         .link a {
             list-style: none;
             text-decoration: none;
@@ -98,13 +112,15 @@ $tabletH: 1024px;
             line-height: 80px;
             transition: all .8s;
             cursor: pointer;
-            @media screen and(min-width: $tabletV) and (max-width: $tabletH){ 
+
+            @media screen and(min-width: $tabletV) and (max-width: $tabletH) {
                 & {
-                   font-size: 5rem;
-                   line-height: 10rem;
+                    font-size: 5rem;
+                    line-height: 10rem;
                 }
             }
-            @media screen and(max-width: $movil){
+
+            @media screen and(max-width: $movil) {
                 & {
                     padding: 0;
                     display: flex;
@@ -113,6 +129,7 @@ $tabletH: 1024px;
                     text-align: center;
                 }
             }
+
             li {
                 color: #d3d2d2;
                 transition: .4s;
@@ -141,7 +158,8 @@ $tabletH: 1024px;
             display: none;
         }
     }
-    @media screen and(min-width: $tabletV) and (max-width: $tabletH){
+
+    @media screen and(min-width: $tabletV) and (max-width: $tabletH) {
         & {
             display: none;
         }
@@ -220,11 +238,13 @@ $tabletH: 1024px;
     position: absolute;
     left: 7%;
     width: 30%;
-    @media screen and(min-width: $tabletV) and (max-width: $tabletH){
+
+    @media screen and(min-width: $tabletV) and (max-width: $tabletH) {
         & {
             width: 40%;
         }
     }
+
     @media screen and (max-width: $movil) {
         & {
             width: 85%;
@@ -316,14 +336,17 @@ $tabletH: 1024px;
         align-items: flex-start;
         justify-content: center;
         padding: 80px;
-        @media screen and(min-width: $tabletV) and (max-width: $tabletH){
+
+        @media screen and(min-width: $tabletV) and (max-width: $tabletH) {
             & {
-                padding: 80px 30px;
+                padding: 80px 20px;
             }
         }
+
         @media screen and (max-width: $movil) {
             & {
-                padding: 30px;
+                padding: 20px;
+                align-items: center;
             }
         }
 
@@ -331,6 +354,19 @@ $tabletH: 1024px;
             color: #fff;
             font-size: 25px;
             text-transform: uppercase;
+
+            @media screen and(max-width: $movil) {
+                & {
+                    font-size: 18px;
+                    text-align: center;
+                }
+            }
+
+            @media screen and(min-width: $tabletV) and (max-width: $tabletH) {
+                & {
+                    font-size: 20px;
+                }
+            }
         }
 
         p {
@@ -338,6 +374,18 @@ $tabletH: 1024px;
             font-size: 20px;
             margin: 15px 0;
             text-align: justify;
+
+            @media screen and(max-width: $movil) {
+                & {
+                    font-size: 16px;
+                }
+            }
+
+            @media screen and(min-width: $tabletV) and (max-width: $tabletH) {
+                & {
+                    font-size: 18px;
+                }
+            }
         }
 
         a {
@@ -352,6 +400,13 @@ $tabletH: 1024px;
                 background: red;
                 transform: scale(1.04);
             }
+
+            @media screen and(max-width: $movil) {
+                & {
+                    margin-top: 2rem;
+                }
+            }
+
         }
     }
 
@@ -441,10 +496,13 @@ select {
     }
 
     .img {
+        position: relative;
         width: 32%;
         height: 300px;
         margin: 3px;
-        background: rgb(255, 255, 255);
+        background: rgb(83, 87, 87);
+        background: linear-gradient(0deg, rgba(83, 87, 87, 1) 0%, rgba(0, 0, 0, 1) 100%);
+        //background: rgb(255, 255, 255);
         box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
         transition: all .8s ease-in-out;
 
@@ -469,7 +527,8 @@ select {
 
         .caja-hover {
             position: absolute;
-            width: 28.5%;
+            width: 100%;
+            //width: 28.5%;
             height: 304px;
             background: #0e0d0dd9;
             display: flex;
@@ -545,7 +604,7 @@ select {
             display: none;
         }
 
-        @media screen and(max-width: $movil){
+        @media screen and(max-width: $movil) {
             .info-movil {
                 display: inline-flex;
                 flex-direction: column;
@@ -659,8 +718,8 @@ select {
 /* CONTACTO */
 
 .contacto {
-    width: 100vw;
-    height: 650px;
+    width: 100%;
+    height: 74vh;
     @include fondoProductos();
     background-image: url("../assets/img/footer.png");
 
@@ -690,8 +749,8 @@ select {
                 margin-left: 0;
             }
         }
-        
-        @media screen and(min-width: $tabletV) and (max-width: $tabletH){
+
+        @media screen and(min-width: $tabletV) and (max-width: $tabletH) {
             & {
                 width: 100%;
                 margin-left: 0;
