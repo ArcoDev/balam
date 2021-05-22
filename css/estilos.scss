@@ -522,8 +522,10 @@ select {
         transition: all .8s ease-in-out;
 
         .img-prod {
-            width: 100%;
+            width: 90%;
             height: 300px;
+            object-fit: contain;
+            margin-left: 15px;
         }
 
         @media screen and(max-width: $movil) {
@@ -744,7 +746,6 @@ select {
         & {
             background: none;
             height: 454px;
-            margin-top: -25px;
         }
     }
 
@@ -768,26 +769,23 @@ select {
         box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 
         @media screen and(max-width: $movil) {
-            & {
+            & { 
+                position: relative;
                 width: 100%;
-                margin-left: 0;
+                left: 0;
+                padding: 18px 0;
             }
         }
 
         @media screen and(min-width: $tabletV) and (max-width: $tabletH) {
-            & {
+            & { 
                 width: 100%;
-                margin-left: 0;
+                left: 0;
                 margin-top: 0;
-                border-radius: 0;
                 height: 55vh;
             }
         }
-        @media screen and(max-width: $monitor) {
-            & {
-                margin-top: 130px
-            }
-        }
+
 
         h2 {
             color: #fff;
@@ -928,7 +926,6 @@ select {
 .ubicacion {
     width: 100vw;
     text-align: center;
-
     p {
         color: #fff;
         font-weight: bold;

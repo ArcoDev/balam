@@ -17,6 +17,18 @@
         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
         crossorigin="anonymous" />
     <link rel="stylesheet" href="css/estilos.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BD1MQHKNTV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-BD1MQHKNTV');
+    </script>
 </head>
 
 <body>
@@ -142,7 +154,7 @@
                     }
                 ?>
             </div>
-            
+
         </div>
     </section>
     <div id="contacto" class="ubicacion ">
